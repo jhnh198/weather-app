@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <img class="wc-top-banner" src="images/wc_top_banner.png" alt="">
+        <img class="wc-icon" src="images/The_Weather_Channel.png" alt="weather-channel-logo">
+        <p class="top-header">Current <br/>Conditions</p>
+        <div class="clock-container">
+            <p id="clock-element"> </p>
+            <p id="date-element"> </p>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="left-content">             
+            <p id="degree-text">66°</p>
+            <p id="condition-text">Sunny</p>
+            <img id="condition-image" src="images/ccef/CC_Clear1.gif" alt="weather-icon">
+            <p>Wind: <span id="wind-speed-span">NNE 6</span></p>
+        </div>   
+            
+        <div class="right-content">
+            <input id="region-text" value="Seattle"/>
+            <p>Humidity: <span id="humidity-span">60%</span></p>
+            <p>Dewpoint: <span id="dewpoint-span">55</span></p>
+            <p>Ceiling: <span id="ceiling-span">Unlimited</span></p>
+            <p>Visibility: <span id="visibility-span"> 10 mi.</span></p>
+            <p>Pressure: <span id="pressure-span">29.995</span></p>
+        </div>
+    </div>
+    
+    <div class="scroll-footer">
+        <p id="scroll-content">Weather report</p>
+    </div>
+
+    <div id="modal-container"> 
+        <input type="text" id="region-entry" placeholder="Enter a city name"><br><br>
+        <button id="region-search-button">Search Region</button>
+    </div>
+
+    <!-- make button for unmute -->
+    <audio id="audio" src=""></audio>
+</body>
+</html>

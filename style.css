@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Weather-Star-Small;
+    src: url('fonts/Star4000/Star4000 Small.ttf');
+}
+
+@font-face {
+    font-family: Weather-Star-Large;
+    src: url('fonts/Star4000/Star4000 Large.ttf');
+}
+@font-face {
+    font-family: Weather-Star-Radar;
+    src: url('fonts/Star4000/Star4000 Radar.ttf');
+}
+@font-face {
+    font-family: Weather-Star;
+    src: url('fonts/Star4000/Star4000.ttf');
+}
+@font-face {
+    font-family: Weather-Star-Large;
+    src: url('fonts/Star4000/Star4000 Large.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: Weather-Star-Large, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 5px 5px #000000;
+    color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(0deg, #de6206 23.8%, #3f1a82 65%);
+}
+
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.top-header{
+    z-index: 10;
+    font-family: Weather-Star-Large;
+    margin-left: 20px;
+}
+
+.wc-top-banner{
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    width: 1400px;
+    height: 200px;
+}
+
+.wc-icon{
+    position: absolute;
+    left: 200px;
+    z-index: 10;
+    top: 25px;
+}
+
+
+.top-header{
+    color: #dedb06;
+    text-shadow: 0.1em 0.1em 1px #000000;
+    font-size: larger;
+    font-weight: bold;
+    position: absolute;
+    left: 450px;
+    z-index: 10;
+}
+
+.clock-container{
+    position: absolute;
+    right: 200px;
+    z-index: 10;
+}
+
+.main-content, .scroll-footer{
+    background-color: rgb(41, 41, 110);
+    display: flex;
+}
+
+.main-content{
+    box-shadow: inset 0px 5px 40px 3px #ffffff8c;
+    border-radius: 5px 5px 0 0;
+    margin-left: 180px;
+    margin-right: 180px;
+    padding-bottom: 50px;
+}
+
+.left-content{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+}
+
+.right-content{
+    padding: 10px;
+    flex: 1;
+}
+
+#degree-text{
+    padding-top: 10px;
+    font-size: 60px;
+}
+
+.right-content p{
+    margin-left: 10px;
+    padding: 10px;
+    left: 10px;
+}
+
+.scroll-footer{
+    border-top: 3px solid white;
+}
+
+#clock-element, #date-element{
+    font-family: Weather-Star-Small;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+#condition-image{
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#region-text{
+    margin-left: 0;
+    padding-left: 0;
+    color: #dedb06;
+    background-color: rgba(41, 41, 110, 0);
+    border: 0;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+
+.error{
+    outline: #dedb06;
+}
+
+/* Scrolling text styling*/
+.scroll-footer{
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 200px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+  
+#scroll-content {
+    width: 100%;
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 60s linear infinite;
+    -webkit-animation: my-animation 60s linear infinite;
+    animation: my-animation 60s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }  
